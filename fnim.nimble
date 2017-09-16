@@ -4,6 +4,7 @@ version       = "0.1.0"
 author        = "Sebastian Porto"
 description   = "Functional programing for Nim"
 license       = "MIT"
+skipDirs      = @["tests"]
 
 # Dependencies
 

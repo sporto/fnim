@@ -1,1 +1,1 @@
-import fnim_test
+import fnim_tests

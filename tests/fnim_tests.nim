@@ -1,8 +1,8 @@
 import unittest, fnim
 
-suite "reduce":
+suite "foldl":
   test "it works with sequences":
-    proc reducer(val, acc) =
+    proc reducer(val: int, acc: int): int =
       val + acc
 
     let seq = @[1,2,3]
