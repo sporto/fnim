@@ -46,3 +46,9 @@ proc map*[T](maybe: Maybe[T], f: proc(val: T): T): Maybe[T] =
     Just(f(maybe.value))
   else:
     maybe
+
+proc andThen*[T](maybe: Maybe[T], f: proc(val: T): Maybe[T]): Maybe[T] =
+  if maybe.isJust:
+    f(maybe.value)
+  else:
+    maybe
