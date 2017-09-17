@@ -40,3 +40,9 @@ proc `==`*[T](x, y: Maybe[T]): bool =
     true
   else:
     false
+
+proc map*[T](maybe: Maybe[T], f: proc(val: T): T): Maybe[T] =
+  if maybe.isJust:
+    Just(f(maybe.value))
+  else:
+    maybe
