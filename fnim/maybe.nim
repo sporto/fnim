@@ -26,7 +26,7 @@ proc isJust*[T](maybe: Maybe[T]): bool =
 proc isNothing*[T](maybe: Maybe[T]): bool =
   maybe.kind == MaybeNothing
 
-proc with_default*[T](maybe: Maybe[T], default: T): T =
+proc withDefault*[T](maybe: Maybe[T], default: T): T =
   case maybe.kind:
     of MaybeJust:
       maybe.value

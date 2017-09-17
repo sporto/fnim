@@ -21,6 +21,8 @@ suite "maybe":
     check just == Just("Hello")
     check nothing == Nothing[string]()
 
-  test "with_default returns the default":
+  test "withDefault returns the default":
     let nothing = Nothing[string]()
-    check nothing.with_default("Default") == "Default"
+    check nothing.withDefault("Default") == "Default"
+
+  test "andThen"
