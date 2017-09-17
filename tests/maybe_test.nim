@@ -75,5 +75,3 @@ suite "Maybe.andTap":
 
     check result.isJust() == true
     check result.withDefault(0) == 3
-
-  # test "andMap"
