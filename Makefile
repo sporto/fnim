@@ -1,2 +1,2 @@
 test:
-	nim c -r tests/all
+	nim c -r tests/all_test

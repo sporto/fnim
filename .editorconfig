@@ -8,6 +8,10 @@ charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = false
 
+[*.nim]
+indent_style = space
+tab_size = 2
+
 [Makefile]
 indent_style = tab
 tab_size = 2
